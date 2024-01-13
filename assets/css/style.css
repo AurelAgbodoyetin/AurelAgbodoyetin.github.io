@@ -848,7 +848,6 @@ main {
   line-height: 1.6;
 }
 
-
 /**
  * skills 
  */
@@ -1904,24 +1903,42 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
   .download-btn {
-    background:#7b76e2;
-    width:200px;
-    height:60px;
-    text-align:center;
-    cursor:pointer;
-    margin:20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:#ffdb70;
     border-radius:10px;
-    box-sizing:border-box;
-    overflow:hidden;
+  }
+  
+  .download-btn ion-icon {
+    margin-bottom: 5px; /* Adjust as needed for spacing between icon and text */
+  }
+  
+  .download-btn span {
+    font-size: 15px;
+  }
+  
+  .download-btn .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+  }
+  
+  .download-btn ion-icon {
+    margin-right: 5px; /* Adjust as needed for spacing between icon and text */
   }
 
-  .download-btn div {
-    width:100%;
-    height:100%;
-    font-size:15px;
-    font-weight:600;
-    text-transform:uppercase;
-    line-height:50px;
+  .sidebar-info_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-info_more .download-btn {
+    margin-top: 20px; /* Adjust as needed for vertical spacing */
   }
 
 }
